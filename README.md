@@ -1,65 +1,40 @@
-# kjkkkkkk
+A fúria das.    profundezas
+
+A história se passa em um tempo medieval, onde os personagens principais são um lenhador e seus 2 filhos que vivem próximos do vilarejo Pedra Fina. O vilarejo está sendo constantemente atacado pelos monstros que vivem na caverna próxima a cidade, e sua missão é acabar com essa ameaça…
+
+Introdução:
+começamos criando uma função de introdução que explica o que é o jogo e qual será sua missão
+
+Lista de personagens:
+
+Criamos uma lista de dicionários com os personagens jogáveis e seus status, para o jogador escolher o que mais o agradar. 
+
+Depois criamos uma lista de dicionário de inimigos com seus status para serem apresentados mais à frente no jogo.
+
+Escolha de personagem:
+Usamos print para mandar a mensagem “Escolha seu personagem” ao jogador. O sistema inicialmente é operado por For i In.
+
+com input nós fazemos a escolha do personagem com a mensagem “digite o número do player escolhido”
 
 
-def introdução():
-    print("blablablabla.")
-    print("blablablablablablabmanmablabmablablablablablablablabla")
 
-players =[
-    {"nome":"personagem1","vida":25,"ataque":3},
-    {"nome":"personagem2","vida":30,"ataque":4.5},
-    {"nome":"personagem3","vida":42.0,"ataque":7}
 
-]
 
-inimigo= [
-    {"nome1":"inimigo1", "vida":15,"ataque":10},
-    {"nome2":"inimigo2","vida":20,"ataque":15},
-    {"nome3":"inimigo3","vida":25,"ataque":17}
-]
+Sistema de batalha:
 
-def escolha_persongem():
-    print("Escolha seu persongem:")
-    for i in range(len(players)):
-        player = players[i]
-        
-    while True:
-        escolha = input("digite o numero do player escolhido: ")
-        if escolha.isdigit() and 1 <= int(escolha) <= len(players):
-            player_escolhido = player[int(escolha)- 1]:
-                return player_escolhido
-        else:
-        print("opção inválida")
+Criamos a função def batalha e apresentamos o inimigo, conforme o dicionário criado anteriormente.
+usamos f para chamar a variável e print para apresentar o oponente, com um input de escolha após a mensagem.
 
-        
-def batalha(player,inimigo):
-    print(f "blablablablabmablabman")
-    eai =input("blablablablablanlanms? (atacar/fugir))")
-    
-    while inimigo["vida"] > 0:
-        if eai == "atacar":
-            while player_escolhido["vida"] >= inimigo["nome1","ataque"]
- itens = ["coisa1","coisa2","coisa3"]
-inventario = []
+o jogador usa if para decidir se vai atacar ou fugir do inimigo, em seguida utilizamos while para que enquanto a vida do jogador for maior ou igual ao ataque inimigo( ou vice-versa) vai continuar a batalha , e então utilizamos outro if para verificar se o hp do player for menor ou igual ao ataque inimigo, ele retorna a mensagem (você perdeu).
+Em seguida, outra verificação, porém usando Elif para ter o mesmo mecanismo que o player tem, retornando a mensagem (você ganhou).
+Por último, usamos eles em caso de empate.
 
-def explorar():
-    print("vc encontrou tal coisa blanlanlan? (sim/nao)")
-    if acao.lower() == "sim":
-        item_encontrado = random.choice(itens)
-        inventario.append(item_encontrado)
-        print(f"vc encontrou um {item_encontrado}")
-        return
-    elif acao.lower() == "nao":
-        print("vc nao quis e blablablabla")
-        return
-    else:
-        print("opçao inválida")           
-    
-caminho = input("qual caminho vc escolhe entrar? (esquerda/direita)")
-    if ruas == "direita":
-        print("blablablanlanlan")
-    elif ruas == "esquerda":
-        print("blablablablablablablab")
-    else:
-        print("opção invalida.")
-    batalha(player,inimigo)
+itens e inventário:
+Criamos uma lista de dicionário com itens e suas especificações, e uma lista vazia que seria o inventário do player.
+
+O jogador vai poder encontrar três itens durante sua jornada.
+
+Sistema de caminhos:
+Criamos uma função usando def para que o jogador possa ter opção de seguir caminhos diferentes no seu jogo, usando print com uma mensagem “você encontrou alguns caminhos para seguir” assim também usamos o print para que o jogador faça sua escolha.
+
+Em um dos caminhos sempre vai estar um dos chefes do jogo! E ao derrotá-lo você encontrará um item especial.
