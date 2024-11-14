@@ -38,3 +38,8 @@ Sistema de caminhos:
 Criamos uma função usando def para que o jogador possa ter opção de seguir caminhos diferentes no seu jogo, usando print com uma mensagem “você encontrou alguns caminhos para seguir” assim também usamos o print para que o jogador faça sua escolha.
 
 Em um dos caminhos sempre vai estar um dos chefes do jogo! E ao derrotá-lo você encontrará um item especial.
+
+
+
+
+014380315270128506H2CMCELA∆
