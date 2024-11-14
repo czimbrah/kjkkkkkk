@@ -42,4 +42,5 @@ Em um dos caminhos sempre vai estar um dos chefes do jogo! E ao derrotá-lo voc�
 
 
 
-014380315270128506H2CMCELA∆
+
+
